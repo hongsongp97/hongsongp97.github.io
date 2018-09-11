@@ -1,0 +1,77 @@
+
+@media (max-width: $break-small) {
+    .header {
+        .navigation {
+            display: none !important;
+        }
+        .join {
+            display: none;
+        }
+    } 
+}
+@media (max-width: 350px) {
+    .container {
+        .left-header {
+            .whitepaper-btn {
+                min-width: 120px !important;
+            }
+        }
+    }
+}
+@media (min-width: $break-small) and (max-width: $break-medium) {
+    .header {
+        .navigation ul li {
+            padding-right: 15px !important;
+        }
+        .login-register-btn {
+            width: 60px !important;
+            font-size: 12px !important;
+            padding: 2px;
+            &:after {
+                content: "Login \a Register";
+                white-space: pre;
+            }
+            span {
+                display: none;
+            }
+        }
+    } 
+}
+@media (min-width: $break-medium) {
+    .header {
+        .login-register-btn {
+            width: 160px !important;
+            span {
+                display: block;
+            }
+            &:after {
+                content: "";
+            }
+        }
+    } 
+}
+@media (max-width: $break-large) {
+    .header {
+        .navigation {
+            display: none;
+        }
+        #nav-button {
+            display: block;
+        }
+    }
+}
+@media (min-width: $break-large) {
+    .header {
+        .navigation {
+            display: flex;
+        }
+        #nav-button {
+            display: none;
+        }
+    }
+}
+@media (min-width: $break-large) and (max-width: $break-extra-large) {
+    .header .navigation ul li {
+        padding-right: 20px !important;
+    }
+}

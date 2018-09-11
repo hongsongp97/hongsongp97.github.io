@@ -1,0 +1,52 @@
+.smart-city {
+    .content {
+        z-index: 1;
+        .sub-title {
+            opacity: 0.9;
+            font-size: 2.25rem;
+            color: #ffffff;
+        }
+        .title {
+            font-size: 4rem;
+            font-weight: 500;
+            line-height: 1.25;
+            color: #ffffff;
+        }
+    }
+    .points {
+        svg {
+            z-index: 1;
+        }
+        .point-1 {
+            width: calc(100% / 20);
+            height: calc(100% / 20);
+            left: calc(100% / 17.561);
+            top: calc(100% / 1.36876);
+        }
+        .point-2 {
+            width: calc(100% / 22.5);
+            height: calc(100% / 22.5);
+            left: calc(100% / 5.16129);
+            top: calc(100% / 2.248677);
+        }
+        .point-3 {
+            width: calc(100% / 30);
+            height: calc(100% / 30);
+            left: calc(100% / 1.700118);
+            top: calc(100% / 3.571428);
+        }
+        .point-4 {
+            width: calc(100% / 30);
+            height: calc(100% / 30);
+            left: calc(100% / 1.29);
+            top: calc(100% / 3.777777);
+        }
+        .point-5 {
+            width: calc(100% / 20);
+            height: calc(100% / 20);
+            left: calc(100% / 1.1669368);
+            top: calc(100% / 2.07317);
+        }
+    }
+}
+@import '../responsive/_smart-city-responsive';
