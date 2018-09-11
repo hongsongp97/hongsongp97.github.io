@@ -1,0 +1,115 @@
+.header-area {
+  height: 60px;
+}
+.header {
+  height: 60px;
+  background-color: #ffffff;
+  z-index: 100;
+  .container {
+    .left-header {
+      .logo {
+        width: 34px;
+        height: 30px;
+      }
+      .whitepaper-btn {
+        min-width: 160px;
+        height: 40px;
+        border-radius: 5px;
+        background-color: #1e1e42;
+        color: white;
+        border: none;
+        &:hover {
+          background-color: #ff8a57;
+          color: #ffffff;
+        }
+      }
+      .join {
+        font-size: 14px;
+        color: #1e1e42;
+      }
+    }
+    .right-header {
+      .navigation {
+        ul {
+          margin: 0;
+          font-size: 1rem;
+          li {
+            padding-right: 40px;
+            a {
+              font-size: 14px;
+              color: #3b4858;
+              &:hover {
+                border-bottom: 2px solid #ff8a57;
+                font-weight: bold;
+                color: #ff8a57;
+              }
+            }
+          }
+          .selected {
+            border-bottom: 2px solid #ff8a57;
+            font-weight: bold;
+            color: #ff8a57;
+          }
+
+          .navbar {
+            padding: 0 !important;
+          }
+        }
+      }
+      .navbar {
+        padding: 0 !important;
+      }
+    }
+    .login-btn,
+    .register-btn {
+      height: 30px;
+      max-width: 100px;
+      padding: 0 10px !important;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: solid 1px #979797;
+      font-size: 0.875rem !important;
+      color: #3b4858;
+      &:hover {
+        background-color: #ff8a57;
+        color: #ffffff;
+      }
+    }
+    .login-btn {
+      margin-right: 10px;
+    }
+  }
+}
+.navigation-mobile {
+  display: none;
+  position: fixed;
+  background-color: #f1f1f1;
+  height: 100vh;
+  z-index: 100;
+  li {
+    line-height: 40px;
+    a {
+      font-size: 14px;
+      color: #3b4858;
+    }
+    .login-btn {
+      margin-bottom: 10px;
+    }
+    .login-btn,
+    .register-btn {
+      width: 150px;
+      height: 30px;
+      padding: 0 10px !important;
+      border-radius: 5px;
+      background-color: #ffffff;
+      border: solid 1px #979797;
+      font-size: 0.875rem !important;
+      color: #3b4858;
+      &:hover {
+        background-color: #ff8a57;
+        color: #ffffff;
+      }
+    }
+  }
+}
+@import "../responsive/_header-responsive";

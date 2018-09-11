@@ -1,0 +1,34 @@
+@media (max-width: $break-medium - 0.1) {
+    .protocol{
+        & > div {
+            display: block !important;
+        }
+        .content {
+            position: relative !important;
+        }
+        .gap {
+            padding: 0 !important;
+        }
+        padding-bottom: 4rem;
+    }
+}
+@media (min-width: $break-medium) and (max-width: $break-large) {
+    .protocol{
+        .block {
+            padding-bottom: 10px !important;
+            .title {
+                font-size: 1.5rem !important;
+            }
+            .description {
+                font-size: 0.7rem !important;
+            }
+        }
+    }
+}
+@media (min-width: $break-large) and (max-width: $break-extra-large) {
+    .protocol{
+        .title {
+            font-size: 1.8rem !important;
+        }
+    }
+}

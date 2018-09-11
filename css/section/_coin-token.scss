@@ -1,0 +1,48 @@
+.coin-token {
+    .title {
+        @include main-title-color-size(#3b4858, 1.5rem);
+    }
+    .description {
+        font-size: 0.875rem;
+        line-height: 1.71;
+        color: #6d7189;
+        text-align: justify;
+    }
+    table {
+        tr {
+            td {
+                line-height: 50px;
+                &:first-child {
+                    background: #2f2f52;
+                    text-align: right;
+                    width: 25%;
+                    color: white;
+                    font-size: 90%;
+                    padding-right: 10px;
+                }
+                &:last-child {
+                    padding-left: 10px;
+                }
+            }
+        }
+    }
+    .token-number {
+        font-size: 1.5rem;
+        font-weight: 600;
+        color: #3b4858;
+    }
+    .chart-wapper {
+        .hidden-chart {
+            opacity: 0;
+            z-index: -1;
+        }
+        .chart-container {
+            background-color: transparent;
+            background-image: url('../assets/images/layer-18.png');
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat; 
+        }
+    }
+}
+@import '../responsive/_coin-token-responsive';

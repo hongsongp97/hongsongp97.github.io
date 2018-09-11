@@ -1,0 +1,59 @@
+.protocol{
+    background-image: linear-gradient(to left, #ffdad4, #19002a);
+    .image {
+        .logos {
+            @keyframes up-down {
+                0%   {transform: translate(0, 25%)}
+                50%  {transform: translate(0, 0%)}
+                100% {transform: translate(0, 25%)}
+            }
+            @-moz-keyframes up-down {
+                0%   {transform: translate(0, 25%)}
+                50%  {transform: translate(0, 0%)}
+                100% {transform: translate(0, 25%)}
+            }
+            @-webkit-keyframes up-down {
+                0%   {transform: translate(0, 25%)}
+                50%  {transform: translate(0, 0%)}
+                100% {transform: translate(0, 25%)}
+            }
+            img {
+                position: absolute;
+                width: calc(100% / 14.1);
+                height: auto;
+                transition-duration: 1s;
+                animation-name: up-down;
+                animation-duration: 2s;
+                animation-iteration-count: infinite;
+            }
+            .logo-1 {
+                top: calc(100% / 25);
+                left: calc(100% / 2.07);
+            }
+            .logo-2 {
+                top: calc(100% / 2.25);
+                left: calc(100% / 7.5);
+            }
+            .logo-3 {
+                top: calc(100% / 2.03);
+                left: calc(100% / 1.555);
+            }
+        }
+    }
+    .content {
+        .block {
+            padding-bottom: 20px;
+            .title {
+                font-size: 2.25rem;
+                font-weight: 500;
+                color: #ffffff;
+            }
+            .description {
+                font-size: 0.875rem;
+                line-height: 1.71;
+                color: #ffffff;
+            }
+        }
+    }
+}
+@import '../responsive/_protocol-responsive';

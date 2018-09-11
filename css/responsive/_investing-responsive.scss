@@ -1,0 +1,64 @@
+@media (max-width: $break-small) {
+    .investing {
+        .top {
+            .description {
+                .text {
+                    font-size: 1.2rem;
+                }
+            }
+            .commit {
+                .text {
+                    font-size: 0.875rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $break-small) and (max-width: $break-medium) {
+    .investing {
+        .top {
+            .description {
+                .text {
+                    font-size: 1.5rem;
+                }
+            }
+            .commit {
+                .text {
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $break-medium) and (max-width: $break-large) {
+    .investing {
+        .top {
+            .description {
+                .text {
+                    font-size: 1.7rem;
+                }
+            }
+            .commit {
+                .text {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+}
+@media (min-width: $break-large) and (max-width: $break-extra-large) {
+    .investing {
+        .top {
+            .description {
+                .text {
+                    font-size: 2rem;
+                }
+            }
+            .commit {
+                .text {
+                    font-size: 1.3rem;
+                }
+            }
+        }
+    }
+}

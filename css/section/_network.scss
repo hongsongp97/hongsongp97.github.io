@@ -1,0 +1,218 @@
+.network {
+  background-color: #0d002a;
+  .title {
+    font-size: 1.9rem;
+    font-weight: 550;
+    text-align: center;
+    color: #ff8a57;
+  }
+  .description {
+    font-size: 1.9rem;
+    font-weight: 550;
+    text-align: center;
+    color: #ff8a57;
+  }
+  .action {
+    z-index: 99;
+    button {
+      min-width: 190px;
+      height: 40px;
+      border-radius: 5px;
+      background-color: #ffffff;
+      font-size: 1.125rem;
+      text-align: center;
+      color: #ff8a57;
+      &:hover {
+        background-color: #ff8a57;
+        color: #ffffff;
+      }
+    }
+  }
+  .map {
+    .logos {
+      max-width: $break-large;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 3;
+      img {
+        position: absolute;
+        width: calc(100% / 15.333);
+        height: auto;
+        transition-duration: 1s;
+        animation-name: logo-up-down;
+        animation-duration: 14s;
+        animation-iteration-count: infinite;
+        &:hover {
+          transform: scale(1.1) !important;
+          transform: translate(0, -5%);
+        }
+      }
+      @keyframes logo-up-down {
+        7% {
+          transform: translate(0, -15%);
+        }
+        14% {
+          transform: translate(0, 0);
+        }
+      }
+      @-moz-keyframes logo-up-down {
+        7% {
+          transform: translate(0, -15%);
+        }
+        14% {
+          transform: translate(0, 0);
+        }
+      }
+      @-webkit-keyframes logo-up-down {
+        7% {
+          transform: translate(0, -15%);
+        }
+        14% {
+          transform: translate(0, 0);
+        }
+      }
+      .logo-1 {
+        top: calc(100% / 4.5);
+        left: calc(100% / 9.01818);
+        animation-delay: 0ms;
+      }
+      .logo-2 {
+        top: calc(100% / 1.83);
+        left: calc(100% / 4.15);
+        animation-delay: 2000ms;
+      }
+      .logo-3 {
+        top: calc(100% / 15.05);
+        left: calc(100% / 2.917647);
+        animation-delay: 4000ms;
+      }
+      .logo-4 {
+        top: calc(100% / 1.75);
+        left: calc(100% / 2);
+        animation-delay: 6000ms;
+      }
+      .logo-5 {
+        top: calc(100% / 3.6);
+        left: calc(100% / 1.785);
+        animation-delay: 8000ms;
+      }
+      .logo-6 {
+        top: calc(100% / 2.45);
+        left: calc(100% / 1.38);
+        animation-delay: 10000ms;
+      }
+      .logo-7 {
+        top: calc(100% / 9);
+        left: calc(100% / 1.305);
+        animation-delay: 12000ms;
+      }
+    }
+    .lines {
+      max-width: $break-large;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 1;
+      img {
+        position: absolute;
+        height: auto;
+        filter: invert(0.3);
+      }
+      .line-1 {
+        fill: red;
+        width: calc(100% / 4.38);
+        top: calc(100% / 4.703);
+        left: calc(100% / 7.13178);
+      }
+      .line-2 {
+        width: calc(100% / 2.548476);
+        top: calc(100% / 2.594827);
+        left: calc(100% / 7.0229);
+      }
+      .line-3 {
+        width: calc(100% / 7.4796748);
+        top: calc(100% / 2.57265);
+        left: calc(100% / 7.0229);
+      }
+      .line-4 {
+        width: calc(100% / 3.1292517);
+        top: calc(100% / 2.3515625);
+        left: calc(100% / 3.6);
+      }
+      .line-5 {
+        width: calc(100% / 2.329114);
+        top: calc(100% / 7.921);
+        left: calc(100% / 2.682215);
+      }
+      .line-6 {
+        width: calc(100% / 4.919786);
+        top: calc(100% / 4.666666);
+        left: calc(100% / 2.5555555);
+      }
+      .line-7 {
+        width: calc(100% / 4.423);
+        top: calc(100% / 1.781);
+        left: calc(100% / 1.86612576);
+      }
+      .line-8 {
+        width: calc(100% / 4.867725);
+        top: calc(100% / 3.73913);
+        left: calc(100% / 1.6697);
+      }
+      .line-9 {
+        width: calc(100% / 16.72727);
+        top: calc(100% / 3.54117647);
+        left: calc(100% / 1.356932);
+      }
+    }
+    .points {
+      max-width: $break-large;
+      left: 50%;
+      transform: translate(-50%, 0);
+      z-index: 2;
+      img {
+        position: absolute;
+        width: calc(100% / 28.75);
+        height: auto;
+      }
+      .point-1 {
+        top: calc(100% / 2.787);
+        left: calc(100% / 7.863247);
+      }
+      .point-2 {
+        top: calc(100% / 1.46829);
+        left: calc(100% / 3.881856);
+      }
+      .point-3 {
+        top: calc(100% / 4.9752);
+        left: calc(100% / 2.779456);
+      }
+      .point-4 {
+        top: calc(100% / 1.409836);
+        left: calc(100% / 1.936842);
+      }
+      .point-5 {
+        top: calc(100% / 2.437247);
+        left: calc(100% / 1.73258);
+      }
+      .point-6 {
+        top: calc(100% / 1.8242424);
+        left: calc(100% / 1.347);
+      }
+      .point-7 {
+        top: calc(100% / 4.013333);
+        left: calc(100% / 1.274238);
+      }
+    }
+  }
+  .video {
+    height: 300px;
+    transform: translate(0, -50%);
+    z-index: 10;
+    img {
+      &:hover {
+        cursor: pointer;
+      }
+    }
+  }
+}
+@import "../responsive/_network-responsive";

@@ -1,0 +1,35 @@
+.blog {
+  .title {
+    @include main-title-default();
+  }
+  .line {
+    height: 1px;
+    opacity: 0.2;
+    background-color: #9da8b9;
+  }
+  .time {
+    font-size: 1.125rem;
+    line-height: 1.78;
+    color: #9da8b9;
+  }
+  .blog-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+    line-height: 1.33;
+    color: #3b4858;
+  }
+  button {
+    font-size: 1.125rem;
+    min-width: 190px;
+    font-weight: bold;
+    background-color: #ff8a57;
+      color: #ffffff;
+    &:hover {
+      transform: translate(0, -1px);
+      box-shadow: 2px 2px 3px rgba(36, 180, 126, 0.4);
+      background-color: #ffffff;
+      color: #ff8a57;
+    }
+  }
+}
+@import "../responsive/_blog-responsive";
