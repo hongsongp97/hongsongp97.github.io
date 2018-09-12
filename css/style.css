@@ -26,6 +26,7 @@ a:hover {
   height: 60px;
   background-color: #ffffff;
   z-index: 100;
+  width: 100%;
 }
 .header .container .left-header .logo {
   width: 34px;
