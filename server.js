@@ -19,10 +19,6 @@ if (process.env.NODE_ENV !== 'production') {
 // Route config
 app.use('/api/v1', carCRUD);
 
-app.get('/', (req, res) => {
-    res.send({ngon: 'hihi'})
-})
-
 // Run server
 const http = require("http");
 
